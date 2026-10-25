@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="220" viewBox="0 0 400 220">
+  <rect width="400" height="220" fill="#fff7ed"/>
+  <circle cx="200" cy="90" r="40" fill="#fb923c"/>
+  <rect x="140" y="150" width="120" height="14" rx="7" fill="#fdba74"/>
+  <text x="200" y="205" font-family="Poppins, sans-serif" font-size="20" fill="#c2410c" text-anchor="middle">More Coming Soon</text>
+</svg>

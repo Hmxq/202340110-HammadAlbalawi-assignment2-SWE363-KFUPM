@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hammad Albalawi | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#home" class="logo">Hammad.</a>
+
+      <button class="nav-toggle" id="navToggle">Menu</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button id="themeToggle" class="theme-toggle">Dark Mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero / Home Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <p id="greeting" class="greeting"></p>
+        <h1>Hi, I'm Hammad Albalawi</h1>
+        <p class="tagline">Computer Science Student &amp; Aspiring Software Developer</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="assets/images/profile-placeholder.svg" alt="Profile picture placeholder">
+          </div>
+          <div class="about-text">
+            <p>
+              I'm a Computer Science student who enjoys turning ideas into working software,
+              from console applications to responsive web interfaces. I like breaking problems
+              down into small, testable pieces and learning new tools along the way.
+            </p>
+            <p>
+              Outside of coursework, I explore web development and system design, and I'm
+              currently building this portfolio as the foundation of my professional online
+              presence.
+            </p>
+            <p class="one-liner">"Curious learner. Careful builder. Always debugging something."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project-filters">
+          <button id="showAll">All Projects</button>
+          <button id="showCompleted">Completed</button>
+          <button id="showProgress">In Progress</button>
+        </div>
+
+        <div class="projects-list">
+
+          <!-- Bank Management System -->
+          <div class="project-card" data-status="completed">
+            <img src="assets/images/project-bank.svg" alt="Bank Management System placeholder image">
+            <div class="project-info">
+              <h3>Bank Management System</h3>
+              <p>
+                A console-based C++ application for managing bank clients: add, update,
+                delete, and search client records, plus deposit/withdraw transactions with
+                file-based data persistence.
+              </p>
+              <p class="project-tags">C++ | File I/O | OOP</p>
+            </div>
+          </div>
+
+          <!-- Hospital Management System -->
+          <div class="project-card" data-status="completed">
+            <img src="assets/images/project-hospital.svg" alt="Hospital Management System placeholder image">
+            <div class="project-info">
+              <h3>Hospital Management System</h3>
+              <p>
+                A Java application for managing hospital records — patients, doctors, and
+                appointments — built around basic data structures such as linked lists,
+                stacks, and queues.
+              </p>
+              <p class="project-tags">Java | Data Structures | OOP</p>
+            </div>
+          </div>
+
+          <!-- More Coming Soon -->
+          <div class="project-card" data-status="progress">
+            <img src="assets/images/project-placeholder.svg" alt="Upcoming project placeholder image">
+            <div class="project-info">
+              <h3>More Coming Soon</h3>
+              <p>
+                This portfolio will grow with future assignments as I add new projects
+                and write-ups.
+              </p>
+              <p class="project-tags">In Progress</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <ul class="skills-list">
+          <li>C++</li>
+          <li>HTML &amp; CSS</li>
+          <li>JavaScript</li>
+          <li>Git &amp; GitHub</li>
+          <li>Problem Solving</li>
+          <li>Responsive Design</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-intro">Have a question or want to connect? Send me a message below.</p>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p id="formStatus" class="form-status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Hammad Albalawi. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

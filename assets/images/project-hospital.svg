@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="220" viewBox="0 0 400 220">
+  <rect width="400" height="220" fill="#fef2f2"/>
+  <rect x="150" y="50" width="100" height="100" rx="8" fill="#ef4444"/>
+  <rect x="185" y="70" width="30" height="60" fill="#ffffff"/>
+  <rect x="165" y="90" width="70" height="20" fill="#ffffff"/>
+  <circle cx="90" cy="170" r="14" fill="#fca5a5"/>
+  <circle cx="310" cy="170" r="14" fill="#fca5a5"/>
+  <line x1="90" y1="170" x2="150" y2="150" stroke="#fca5a5" stroke-width="6"/>
+  <line x1="310" y1="170" x2="250" y2="150" stroke="#fca5a5" stroke-width="6"/>
+  <text x="200" y="205" font-family="Poppins, sans-serif" font-size="18" fill="#b91c1c" text-anchor="middle">Hospital Management System</text>
+</svg>
